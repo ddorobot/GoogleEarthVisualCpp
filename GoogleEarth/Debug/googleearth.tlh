@@ -1,0 +1,1134 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.14.26431.0 (0f5f5c1c).
+//
+// c:\users\박주홍\desktop\googleearth\googleearth\debug\googleearth.tlh
+//
+// C++ source equivalent of Win32 type library C:\\Program Files (x86)\\Google\\Google Earth Pro\\client\\googleearth.exe
+// compiler-generated file created 06/28/18 at 19:57:22 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("3476fab2-687f-4ea6-9ac2-88d72dc7d7fc"))
+/* LIBID */ __EARTHLib;
+struct /* coclass */ ApplicationGE;
+struct __declspec(uuid("2830837b-d4e8-48c6-b6ee-04633372abe4"))
+/* dual interface */ IApplicationGE;
+struct __declspec(uuid("08d46bcd-af56-4175-999e-6ddc3771c64e"))
+/* dual interface */ ICameraInfoGE;
+enum __MIDL___MIDL_itf_earthcom_0000_0000_0001;
+struct __declspec(uuid("865ab2c1-38c5-492b-8b71-ac73f5a7a43d"))
+/* dual interface */ IViewExtentsGE;
+struct __declspec(uuid("92547b06-0007-4820-b76a-c84e402ca709"))
+/* dual interface */ IFeatureGE;
+struct __declspec(uuid("851d25e7-785f-4db7-95f9-a0ef7e836c44"))
+/* dual interface */ IFeatureCollectionGE;
+struct __declspec(uuid("d794fe36-10b1-4e7e-959d-9638794d2a1b"))
+/* dual interface */ ITimeIntervalGE;
+struct __declspec(uuid("e39391ae-51c0-4fbd-9042-f9c5b6094445"))
+/* dual interface */ ITimeGE;
+enum __MIDL_ITimeGE_0002;
+struct __declspec(uuid("f4f7b301-7c59-4851-ba97-c51f110b590f"))
+/* dual interface */ IPointOnTerrainGE;
+enum __MIDL_IApplicationGE_0001;
+struct __declspec(uuid("d08577e0-365e-4216-b1a4-19353eac1602"))
+/* dual interface */ ITourControllerGE;
+struct __declspec(uuid("524e5b0f-d593-45a6-9f87-1bae7d338373"))
+/* dual interface */ ISearchControllerGE;
+struct __declspec(uuid("be5e5f15-8ec4-4dcc-b48d-9957d2de4d05"))
+/* dual interface */ IAnimationControllerGE;
+struct /* coclass */ TimeGE;
+struct /* coclass */ TimeIntervalGE;
+struct /* coclass */ CameraInfoGE;
+struct /* coclass */ ViewExtentsGE;
+struct /* coclass */ TourControllerGE;
+struct /* coclass */ SearchControllerGE;
+struct /* coclass */ AnimationControllerGE;
+struct /* coclass */ FeatureGE;
+struct /* coclass */ FeatureCollectionGE;
+struct /* coclass */ PointOnTerrainGE;
+struct /* coclass */ KHInterface;
+struct __declspec(uuid("80a43f86-e2cd-4671-a7fa-e5627b519711"))
+/* dual interface */ IKHInterface;
+struct __declspec(uuid("45f89e39-7a46-4ca4-97e3-8c5aa252531c"))
+/* dual interface */ IKHViewInfo;
+struct __declspec(uuid("d05d6e91-72da-4654-b8a7-bcbd3b87e3b6"))
+/* dual interface */ IKHViewExtents;
+struct __declspec(uuid("07f46615-1857-40cf-9aa9-872c9858e769"))
+/* dual interface */ IKHFeature;
+enum __MIDL_IKHInterface_0001;
+struct /* coclass */ KHViewInfo;
+struct /* coclass */ KHViewExtents;
+struct /* coclass */ KHFeature;
+typedef enum __MIDL___MIDL_itf_earthcom_0000_0000_0001 AltitudeModeGE;
+typedef enum __MIDL_ITimeGE_0002 TimeTypeGE;
+typedef enum __MIDL_IApplicationGE_0001 AppTypeGE;
+typedef enum __MIDL_IKHInterface_0001 appType;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICameraInfoGE, __uuidof(ICameraInfoGE));
+_COM_SMARTPTR_TYPEDEF(IViewExtentsGE, __uuidof(IViewExtentsGE));
+_COM_SMARTPTR_TYPEDEF(ITimeGE, __uuidof(ITimeGE));
+_COM_SMARTPTR_TYPEDEF(ITimeIntervalGE, __uuidof(ITimeIntervalGE));
+_COM_SMARTPTR_TYPEDEF(IPointOnTerrainGE, __uuidof(IPointOnTerrainGE));
+_COM_SMARTPTR_TYPEDEF(ITourControllerGE, __uuidof(ITourControllerGE));
+_COM_SMARTPTR_TYPEDEF(IAnimationControllerGE, __uuidof(IAnimationControllerGE));
+_COM_SMARTPTR_TYPEDEF(IKHViewInfo, __uuidof(IKHViewInfo));
+_COM_SMARTPTR_TYPEDEF(IKHViewExtents, __uuidof(IKHViewExtents));
+_COM_SMARTPTR_TYPEDEF(IKHFeature, __uuidof(IKHFeature));
+_COM_SMARTPTR_TYPEDEF(IKHInterface, __uuidof(IKHInterface));
+_COM_SMARTPTR_TYPEDEF(IApplicationGE, __uuidof(IApplicationGE));
+_COM_SMARTPTR_TYPEDEF(IFeatureGE, __uuidof(IFeatureGE));
+_COM_SMARTPTR_TYPEDEF(IFeatureCollectionGE, __uuidof(IFeatureCollectionGE));
+_COM_SMARTPTR_TYPEDEF(ISearchControllerGE, __uuidof(ISearchControllerGE));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("8097d7e9-db9e-4aef-9b28-61d82a1df784"))
+ApplicationGE;
+    // [ default ] interface IApplicationGE
+
+struct __declspec(uuid("08d46bcd-af56-4175-999e-6ddc3771c64e"))
+ICameraInfoGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFocusPointLatitude,put=PutFocusPointLatitude))
+    double FocusPointLatitude;
+    __declspec(property(get=GetFocusPointLongitude,put=PutFocusPointLongitude))
+    double FocusPointLongitude;
+    __declspec(property(get=GetFocusPointAltitude,put=PutFocusPointAltitude))
+    double FocusPointAltitude;
+    __declspec(property(get=GetFocusPointAltitudeMode,put=PutFocusPointAltitudeMode))
+    AltitudeModeGE FocusPointAltitudeMode;
+    __declspec(property(get=GetRange,put=PutRange))
+    double Range;
+    __declspec(property(get=GetTilt,put=PutTilt))
+    double Tilt;
+    __declspec(property(get=GetAzimuth,put=PutAzimuth))
+    double Azimuth;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetFocusPointLatitude ( );
+    void PutFocusPointLatitude (
+        double pLat );
+    double GetFocusPointLongitude ( );
+    void PutFocusPointLongitude (
+        double pLon );
+    double GetFocusPointAltitude ( );
+    void PutFocusPointAltitude (
+        double pAlt );
+    AltitudeModeGE GetFocusPointAltitudeMode ( );
+    void PutFocusPointAltitudeMode (
+        AltitudeModeGE pAltMode );
+    double GetRange ( );
+    void PutRange (
+        double pRange );
+    double GetTilt ( );
+    void PutTilt (
+        double pTilt );
+    double GetAzimuth ( );
+    void PutAzimuth (
+        double pAzimuth );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FocusPointLatitude (
+        /*[out,retval]*/ double * pLat ) = 0;
+      virtual HRESULT __stdcall put_FocusPointLatitude (
+        /*[in]*/ double pLat ) = 0;
+      virtual HRESULT __stdcall get_FocusPointLongitude (
+        /*[out,retval]*/ double * pLon ) = 0;
+      virtual HRESULT __stdcall put_FocusPointLongitude (
+        /*[in]*/ double pLon ) = 0;
+      virtual HRESULT __stdcall get_FocusPointAltitude (
+        /*[out,retval]*/ double * pAlt ) = 0;
+      virtual HRESULT __stdcall put_FocusPointAltitude (
+        /*[in]*/ double pAlt ) = 0;
+      virtual HRESULT __stdcall get_FocusPointAltitudeMode (
+        /*[out,retval]*/ AltitudeModeGE * pAltMode ) = 0;
+      virtual HRESULT __stdcall put_FocusPointAltitudeMode (
+        /*[in]*/ AltitudeModeGE pAltMode ) = 0;
+      virtual HRESULT __stdcall get_Range (
+        /*[out,retval]*/ double * pRange ) = 0;
+      virtual HRESULT __stdcall put_Range (
+        /*[in]*/ double pRange ) = 0;
+      virtual HRESULT __stdcall get_Tilt (
+        /*[out,retval]*/ double * pTilt ) = 0;
+      virtual HRESULT __stdcall put_Tilt (
+        /*[in]*/ double pTilt ) = 0;
+      virtual HRESULT __stdcall get_Azimuth (
+        /*[out,retval]*/ double * pAzimuth ) = 0;
+      virtual HRESULT __stdcall put_Azimuth (
+        /*[in]*/ double pAzimuth ) = 0;
+};
+
+enum __MIDL___MIDL_itf_earthcom_0000_0000_0001
+{
+    RelativeToGroundAltitudeGE = 1,
+    AbsoluteAltitudeGE = 2
+};
+
+struct __declspec(uuid("865ab2c1-38c5-492b-8b71-ac73f5a7a43d"))
+IViewExtentsGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetNorth))
+    double North;
+    __declspec(property(get=GetSouth))
+    double South;
+    __declspec(property(get=GetEast))
+    double East;
+    __declspec(property(get=GetWest))
+    double West;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetNorth ( );
+    double GetSouth ( );
+    double GetEast ( );
+    double GetWest ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_North (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_South (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_East (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_West (
+        /*[out,retval]*/ double * pVal ) = 0;
+};
+
+struct __declspec(uuid("e39391ae-51c0-4fbd-9042-f9c5b6094445"))
+ITimeGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetType,put=PutType))
+    TimeTypeGE Type;
+    __declspec(property(get=GetYear,put=PutYear))
+    int Year;
+    __declspec(property(get=GetMonth,put=PutMonth))
+    int Month;
+    __declspec(property(get=GetDay,put=PutDay))
+    int Day;
+    __declspec(property(get=GetHour,put=PutHour))
+    int Hour;
+    __declspec(property(get=GetMinute,put=PutMinute))
+    int Minute;
+    __declspec(property(get=GetSecond,put=PutSecond))
+    int Second;
+    __declspec(property(get=GetTimeZone,put=PutTimeZone))
+    double TimeZone;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TimeTypeGE GetType ( );
+    void PutType (
+        TimeTypeGE pType );
+    int GetYear ( );
+    void PutYear (
+        int pYear );
+    int GetMonth ( );
+    void PutMonth (
+        int pMonth );
+    int GetDay ( );
+    void PutDay (
+        int pDay );
+    int GetHour ( );
+    void PutHour (
+        int pHour );
+    int GetMinute ( );
+    void PutMinute (
+        int pMinute );
+    int GetSecond ( );
+    void PutSecond (
+        int pSecond );
+    double GetTimeZone ( );
+    void PutTimeZone (
+        double pTimeZone );
+    ITimeGEPtr Clone ( );
+    ITimeGEPtr ConvertToZone (
+        double TimeZone );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ TimeTypeGE * pType ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ TimeTypeGE pType ) = 0;
+      virtual HRESULT __stdcall get_Year (
+        /*[out,retval]*/ int * pYear ) = 0;
+      virtual HRESULT __stdcall put_Year (
+        /*[in]*/ int pYear ) = 0;
+      virtual HRESULT __stdcall get_Month (
+        /*[out,retval]*/ int * pMonth ) = 0;
+      virtual HRESULT __stdcall put_Month (
+        /*[in]*/ int pMonth ) = 0;
+      virtual HRESULT __stdcall get_Day (
+        /*[out,retval]*/ int * pDay ) = 0;
+      virtual HRESULT __stdcall put_Day (
+        /*[in]*/ int pDay ) = 0;
+      virtual HRESULT __stdcall get_Hour (
+        /*[out,retval]*/ int * pHour ) = 0;
+      virtual HRESULT __stdcall put_Hour (
+        /*[in]*/ int pHour ) = 0;
+      virtual HRESULT __stdcall get_Minute (
+        /*[out,retval]*/ int * pMinute ) = 0;
+      virtual HRESULT __stdcall put_Minute (
+        /*[in]*/ int pMinute ) = 0;
+      virtual HRESULT __stdcall get_Second (
+        /*[out,retval]*/ int * pSecond ) = 0;
+      virtual HRESULT __stdcall put_Second (
+        /*[in]*/ int pSecond ) = 0;
+      virtual HRESULT __stdcall get_TimeZone (
+        /*[out,retval]*/ double * pTimeZone ) = 0;
+      virtual HRESULT __stdcall put_TimeZone (
+        /*[in]*/ double pTimeZone ) = 0;
+      virtual HRESULT __stdcall raw_Clone (
+        /*[out,retval]*/ struct ITimeGE * * pTime ) = 0;
+      virtual HRESULT __stdcall raw_ConvertToZone (
+        /*[in]*/ double TimeZone,
+        /*[out,retval]*/ struct ITimeGE * * pTime ) = 0;
+};
+
+struct __declspec(uuid("d794fe36-10b1-4e7e-959d-9638794d2a1b"))
+ITimeIntervalGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBeginTime))
+    ITimeGEPtr BeginTime;
+    __declspec(property(get=GetEndTime))
+    ITimeGEPtr EndTime;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ITimeGEPtr GetBeginTime ( );
+    ITimeGEPtr GetEndTime ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_BeginTime (
+        /*[out,retval]*/ struct ITimeGE * * pTime ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ struct ITimeGE * * pTime ) = 0;
+};
+
+enum __MIDL_ITimeGE_0002
+{
+    TimeNegativeInfinityGE = -1,
+    TimeFiniteGE = 0,
+    TimePositiveInfinityGE = 1
+};
+
+struct __declspec(uuid("f4f7b301-7c59-4851-ba97-c51f110b590f"))
+IPointOnTerrainGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLatitude))
+    double Latitude;
+    __declspec(property(get=GetLongitude))
+    double Longitude;
+    __declspec(property(get=GetAltitude))
+    double Altitude;
+    __declspec(property(get=GetProjectedOntoGlobe))
+    long ProjectedOntoGlobe;
+    __declspec(property(get=GetZeroElevationExaggeration))
+    long ZeroElevationExaggeration;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetLatitude ( );
+    double GetLongitude ( );
+    double GetAltitude ( );
+    long GetProjectedOntoGlobe ( );
+    long GetZeroElevationExaggeration ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Latitude (
+        /*[out,retval]*/ double * pLat ) = 0;
+      virtual HRESULT __stdcall get_Longitude (
+        /*[out,retval]*/ double * pLon ) = 0;
+      virtual HRESULT __stdcall get_Altitude (
+        /*[out,retval]*/ double * pAlt ) = 0;
+      virtual HRESULT __stdcall get_ProjectedOntoGlobe (
+        /*[out,retval]*/ long * pProjected ) = 0;
+      virtual HRESULT __stdcall get_ZeroElevationExaggeration (
+        /*[out,retval]*/ long * pZeroExag ) = 0;
+};
+
+enum __MIDL_IApplicationGE_0001
+{
+    EnterpriseClientGE = 0,
+    ProGE = 1,
+    PlusGE = 2,
+    FreeGE = 5,
+    UnknownGE = 255
+};
+
+struct __declspec(uuid("d08577e0-365e-4216-b1a4-19353eac1602"))
+ITourControllerGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=Getspeed,put=Putspeed))
+    double speed;
+    __declspec(property(get=GetPauseDelay,put=PutPauseDelay))
+    double PauseDelay;
+    __declspec(property(get=GetCycles,put=PutCycles))
+    int Cycles;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT PlayOrPause ( );
+    HRESULT Stop ( );
+    double Getspeed ( );
+    void Putspeed (
+        double pSpeed );
+    double GetPauseDelay ( );
+    void PutPauseDelay (
+        double pPauseDelay );
+    int GetCycles ( );
+    void PutCycles (
+        int pCycles );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_PlayOrPause ( ) = 0;
+      virtual HRESULT __stdcall raw_Stop ( ) = 0;
+      virtual HRESULT __stdcall get_speed (
+        /*[out,retval]*/ double * pSpeed ) = 0;
+      virtual HRESULT __stdcall put_speed (
+        /*[in]*/ double pSpeed ) = 0;
+      virtual HRESULT __stdcall get_PauseDelay (
+        /*[out,retval]*/ double * pPauseDelay ) = 0;
+      virtual HRESULT __stdcall put_PauseDelay (
+        /*[in]*/ double pPauseDelay ) = 0;
+      virtual HRESULT __stdcall get_Cycles (
+        /*[out,retval]*/ int * pCycles ) = 0;
+      virtual HRESULT __stdcall put_Cycles (
+        /*[in]*/ int pCycles ) = 0;
+};
+
+struct __declspec(uuid("be5e5f15-8ec4-4dcc-b48d-9957d2de4d05"))
+IAnimationControllerGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSliderTimeInterval))
+    ITimeIntervalGEPtr SliderTimeInterval;
+    __declspec(property(get=GetCurrentTimeInterval,put=PutCurrentTimeInterval))
+    ITimeIntervalGEPtr CurrentTimeInterval;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Play ( );
+    HRESULT Pause ( );
+    ITimeIntervalGEPtr GetSliderTimeInterval ( );
+    ITimeIntervalGEPtr GetCurrentTimeInterval ( );
+    void PutCurrentTimeInterval (
+        struct ITimeIntervalGE * pInterval );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Play ( ) = 0;
+      virtual HRESULT __stdcall raw_Pause ( ) = 0;
+      virtual HRESULT __stdcall get_SliderTimeInterval (
+        /*[out,retval]*/ struct ITimeIntervalGE * * pInterval ) = 0;
+      virtual HRESULT __stdcall get_CurrentTimeInterval (
+        /*[out,retval]*/ struct ITimeIntervalGE * * pInterval ) = 0;
+      virtual HRESULT __stdcall put_CurrentTimeInterval (
+        /*[in]*/ struct ITimeIntervalGE * pInterval ) = 0;
+};
+
+struct __declspec(uuid("1aedb68d-18a7-4ca9-b41b-3ce7e59fab24"))
+TimeGE;
+    // [ default ] interface ITimeGE
+
+struct __declspec(uuid("42df0d46-7d49-4ae5-8ef6-9ca6e41efec1"))
+TimeIntervalGE;
+    // [ default ] interface ITimeIntervalGE
+
+struct __declspec(uuid("645eee5a-bd51-4c05-a6af-6f2cf8950aab"))
+CameraInfoGE;
+    // [ default ] interface ICameraInfoGE
+
+struct __declspec(uuid("d93bf052-fc68-4db6-a4f8-a4dc9beeb1c0"))
+ViewExtentsGE;
+    // [ default ] interface IViewExtentsGE
+
+struct __declspec(uuid("77c4c807-e257-43ad-bb3f-7ca88760bd29"))
+TourControllerGE;
+    // [ default ] interface ITourControllerGE
+
+struct __declspec(uuid("a4f65992-5738-475b-9c16-cf102bcde153"))
+SearchControllerGE;
+    // [ default ] interface ISearchControllerGE
+
+struct __declspec(uuid("1a239250-b650-4b63-b4cf-7fcc4dc07dc6"))
+AnimationControllerGE;
+    // [ default ] interface IAnimationControllerGE
+
+struct __declspec(uuid("cbd4fb70-f00b-4963-b249-4b056e6a981a"))
+FeatureGE;
+    // [ default ] interface IFeatureGE
+
+struct __declspec(uuid("9059c329-4661-49b2-9984-8753c45db7b9"))
+FeatureCollectionGE;
+    // [ default ] interface IFeatureCollectionGE
+
+struct __declspec(uuid("1796a329-04c1-4c07-b28e-e4a807935c06"))
+PointOnTerrainGE;
+    // [ default ] interface IPointOnTerrainGE
+
+struct __declspec(uuid("afd07a5e-3e20-4d77-825c-2f6d1a50be5b"))
+KHInterface;
+    // [ default ] interface IKHInterface
+
+struct __declspec(uuid("45f89e39-7a46-4ca4-97e3-8c5aa252531c"))
+IKHViewInfo : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLatitude,put=PutLatitude))
+    double Latitude;
+    __declspec(property(get=GetLongitude,put=PutLongitude))
+    double Longitude;
+    __declspec(property(get=GetRange,put=PutRange))
+    double Range;
+    __declspec(property(get=GetTilt,put=PutTilt))
+    double Tilt;
+    __declspec(property(get=GetAzimuth,put=PutAzimuth))
+    double Azimuth;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetLatitude ( );
+    void PutLatitude (
+        double pLat );
+    double GetLongitude ( );
+    void PutLongitude (
+        double pLon );
+    double GetRange ( );
+    void PutRange (
+        double pRange );
+    double GetTilt ( );
+    void PutTilt (
+        double pTilt );
+    double GetAzimuth ( );
+    void PutAzimuth (
+        double pAzimuth );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Latitude (
+        /*[out,retval]*/ double * pLat ) = 0;
+      virtual HRESULT __stdcall put_Latitude (
+        /*[in]*/ double pLat ) = 0;
+      virtual HRESULT __stdcall get_Longitude (
+        /*[out,retval]*/ double * pLon ) = 0;
+      virtual HRESULT __stdcall put_Longitude (
+        /*[in]*/ double pLon ) = 0;
+      virtual HRESULT __stdcall get_Range (
+        /*[out,retval]*/ double * pRange ) = 0;
+      virtual HRESULT __stdcall put_Range (
+        /*[in]*/ double pRange ) = 0;
+      virtual HRESULT __stdcall get_Tilt (
+        /*[out,retval]*/ double * pTilt ) = 0;
+      virtual HRESULT __stdcall put_Tilt (
+        /*[in]*/ double pTilt ) = 0;
+      virtual HRESULT __stdcall get_Azimuth (
+        /*[out,retval]*/ double * pAzimuth ) = 0;
+      virtual HRESULT __stdcall put_Azimuth (
+        /*[in]*/ double pAzimuth ) = 0;
+};
+
+struct __declspec(uuid("d05d6e91-72da-4654-b8a7-bcbd3b87e3b6"))
+IKHViewExtents : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetNorth))
+    double North;
+    __declspec(property(get=GetSouth))
+    double South;
+    __declspec(property(get=GetEast))
+    double East;
+    __declspec(property(get=GetWest))
+    double West;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetNorth ( );
+    double GetSouth ( );
+    double GetEast ( );
+    double GetWest ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_North (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_South (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_East (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_West (
+        /*[out,retval]*/ double * pVal ) = 0;
+};
+
+struct __declspec(uuid("07f46615-1857-40cf-9aa9-872c9858e769"))
+IKHFeature : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetVisibility,put=PutVisibility))
+    long Visibility;
+    __declspec(property(get=GetHasView))
+    long HasView;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetVisibility ( );
+    void PutVisibility (
+        long pVal );
+    long GetHasView ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Visibility (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Visibility (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_HasView (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("80a43f86-e2cd-4671-a7fa-e5627b519711"))
+IKHInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetStreamingProgressPercentage))
+    long StreamingProgressPercentage;
+    __declspec(property(get=GetAutoPilotSpeed,put=PutAutoPilotSpeed))
+    double AutoPilotSpeed;
+    __declspec(property(get=GetcurrentViewExtents))
+    IKHViewExtentsPtr currentViewExtents;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IKHViewInfoPtr currentView (
+        long terrain );
+    long GetStreamingProgressPercentage ( );
+    HRESULT SaveScreenShot (
+        _bstr_t fileName,
+        long quality );
+    HRESULT OpenFile (
+        _bstr_t fileName );
+    HRESULT QuitApplication ( );
+    HRESULT SetRenderWindowSize (
+        long width,
+        long height );
+    double GetAutoPilotSpeed ( );
+    void PutAutoPilotSpeed (
+        double pVal );
+    IKHViewExtentsPtr GetcurrentViewExtents ( );
+    HRESULT setView (
+        struct IKHViewInfo * view,
+        long terrain,
+        double speed );
+    HRESULT LoadKml (
+        BSTR * kmlData );
+    IKHFeaturePtr GetFeatureByName (
+        _bstr_t Name );
+    HRESULT setViewParams (
+        double lat,
+        double lon,
+        double Range,
+        double Tilt,
+        double Azimuth,
+        long terrain,
+        double speed );
+    HRESULT SetFeatureView (
+        struct IKHFeature * feature,
+        double speed );
+    SAFEARRAY * GetPointOnTerrainFromScreenCoords (
+        double screen_x,
+        double screen_y );
+    HRESULT getCurrentVersion (
+        int * major,
+        int * minor,
+        int * build,
+        appType * appType );
+    HRESULT isClientInitialized (
+        int * IsInitialized );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_currentView (
+        /*[in]*/ long terrain,
+        /*[out,retval]*/ struct IKHViewInfo * * pView ) = 0;
+      virtual HRESULT __stdcall get_StreamingProgressPercentage (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveScreenShot (
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ long quality ) = 0;
+      virtual HRESULT __stdcall raw_OpenFile (
+        /*[in]*/ BSTR fileName ) = 0;
+      virtual HRESULT __stdcall raw_QuitApplication ( ) = 0;
+      virtual HRESULT __stdcall raw_SetRenderWindowSize (
+        long width,
+        long height ) = 0;
+      virtual HRESULT __stdcall get_AutoPilotSpeed (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoPilotSpeed (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_currentViewExtents (
+        /*[out,retval]*/ struct IKHViewExtents * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_setView (
+        /*[in]*/ struct IKHViewInfo * view,
+        /*[in]*/ long terrain,
+        /*[in]*/ double speed ) = 0;
+      virtual HRESULT __stdcall raw_LoadKml (
+        /*[in]*/ BSTR * kmlData ) = 0;
+      virtual HRESULT __stdcall raw_GetFeatureByName (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IKHFeature * * pFeature ) = 0;
+      virtual HRESULT __stdcall raw_setViewParams (
+        /*[in]*/ double lat,
+        /*[in]*/ double lon,
+        /*[in]*/ double Range,
+        /*[in]*/ double Tilt,
+        /*[in]*/ double Azimuth,
+        /*[in]*/ long terrain,
+        /*[in]*/ double speed ) = 0;
+      virtual HRESULT __stdcall raw_SetFeatureView (
+        /*[in]*/ struct IKHFeature * feature,
+        /*[in]*/ double speed ) = 0;
+      virtual HRESULT __stdcall raw_GetPointOnTerrainFromScreenCoords (
+        /*[in]*/ double screen_x,
+        /*[in]*/ double screen_y,
+        /*[out,retval]*/ SAFEARRAY * * coords ) = 0;
+      virtual HRESULT __stdcall raw_getCurrentVersion (
+        /*[out]*/ int * major,
+        /*[out]*/ int * minor,
+        /*[out]*/ int * build,
+        /*[out]*/ appType * appType ) = 0;
+      virtual HRESULT __stdcall raw_isClientInitialized (
+        /*[out]*/ int * IsInitialized ) = 0;
+};
+
+enum __MIDL_IKHInterface_0001
+{
+    GE_EC = 0,
+    GE_Pro = 1,
+    GE_Plus = 2,
+    GE_Free = 5,
+    GE_Plugin = 6,
+    UNKNOWN = 255
+};
+
+struct __declspec(uuid("a2d4475b-c9aa-48e2-a029-1db829dacf7b"))
+KHViewInfo;
+    // [ default ] interface IKHViewInfo
+
+struct __declspec(uuid("63e6be14-a742-4eea-8af3-0ec39f10f850"))
+KHViewExtents;
+    // [ default ] interface IKHViewExtents
+
+struct __declspec(uuid("b153d707-447a-4538-913e-6146b3fdee02"))
+KHFeature;
+    // [ default ] interface IKHFeature
+
+struct __declspec(uuid("2830837b-d4e8-48c6-b6ee-04633372abe4"))
+IApplicationGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAnimationController))
+    IAnimationControllerGEPtr AnimationController;
+    __declspec(property(get=GetStreamingProgressPercentage))
+    long StreamingProgressPercentage;
+    __declspec(property(get=GetAutoPilotSpeed,put=PutAutoPilotSpeed))
+    double AutoPilotSpeed;
+    __declspec(property(get=GetViewExtents))
+    IViewExtentsGEPtr ViewExtents;
+    __declspec(property(get=GetVersionMajor))
+    int VersionMajor;
+    __declspec(property(get=GetVersionMinor))
+    int VersionMinor;
+    __declspec(property(get=GetVersionBuild))
+    int VersionBuild;
+    __declspec(property(get=GetVersionAppType))
+    AppTypeGE VersionAppType;
+    __declspec(property(get=GetElevationExaggeration,put=PutElevationExaggeration))
+    double ElevationExaggeration;
+    __declspec(property(get=GetTourController))
+    ITourControllerGEPtr TourController;
+    __declspec(property(get=GetSearchController))
+    ISearchControllerGEPtr SearchController;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ICameraInfoGEPtr GetCamera (
+        long considerTerrain );
+    HRESULT SetCamera (
+        struct ICameraInfoGE * camera,
+        double speed );
+    HRESULT SetCameraParams (
+        double lat,
+        double lon,
+        double alt,
+        AltitudeModeGE altMode,
+        double Range,
+        double Tilt,
+        double Azimuth,
+        double speed );
+    long GetStreamingProgressPercentage ( );
+    HRESULT SaveScreenShot (
+        _bstr_t fileName,
+        long quality );
+    HRESULT OpenKmlFile (
+        _bstr_t fileName,
+        long suppressMessages );
+    HRESULT LoadKmlData (
+        BSTR * kmlData );
+    double GetAutoPilotSpeed ( );
+    void PutAutoPilotSpeed (
+        double pVal );
+    IViewExtentsGEPtr GetViewExtents ( );
+    IFeatureGEPtr GetFeatureByName (
+        _bstr_t Name );
+    IFeatureGEPtr GetFeatureByHref (
+        _bstr_t href );
+    HRESULT SetFeatureView (
+        struct IFeatureGE * feature,
+        double speed );
+    IPointOnTerrainGEPtr GetPointOnTerrainFromScreenCoords (
+        double screen_x,
+        double screen_y );
+    int GetVersionMajor ( );
+    int GetVersionMinor ( );
+    int GetVersionBuild ( );
+    AppTypeGE GetVersionAppType ( );
+    long IsInitialized ( );
+    long IsOnline ( );
+    HRESULT Login ( );
+    HRESULT Logout ( );
+    HRESULT ShowDescriptionBalloon (
+        struct IFeatureGE * feature );
+    HRESULT HideDescriptionBalloons ( );
+    IFeatureGEPtr GetHighlightedFeature ( );
+    IFeatureGEPtr GetMyPlaces ( );
+    IFeatureGEPtr GetTemporaryPlaces ( );
+    IFeatureCollectionGEPtr GetLayersDatabases ( );
+    double GetElevationExaggeration ( );
+    void PutElevationExaggeration (
+        double pExaggeration );
+    OLE_HANDLE GetMainHwnd ( );
+    ITourControllerGEPtr GetTourController ( );
+    ISearchControllerGEPtr GetSearchController ( );
+    IAnimationControllerGEPtr GetAnimationController ( );
+    OLE_HANDLE GetRenderHwnd ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetCamera (
+        /*[in]*/ long considerTerrain,
+        /*[out,retval]*/ struct ICameraInfoGE * * pCamera ) = 0;
+      virtual HRESULT __stdcall raw_SetCamera (
+        /*[in]*/ struct ICameraInfoGE * camera,
+        /*[in]*/ double speed ) = 0;
+      virtual HRESULT __stdcall raw_SetCameraParams (
+        /*[in]*/ double lat,
+        /*[in]*/ double lon,
+        /*[in]*/ double alt,
+        /*[in]*/ AltitudeModeGE altMode,
+        /*[in]*/ double Range,
+        /*[in]*/ double Tilt,
+        /*[in]*/ double Azimuth,
+        /*[in]*/ double speed ) = 0;
+      virtual HRESULT __stdcall get_StreamingProgressPercentage (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveScreenShot (
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ long quality ) = 0;
+      virtual HRESULT __stdcall raw_OpenKmlFile (
+        /*[in]*/ BSTR fileName,
+        /*[in]*/ long suppressMessages ) = 0;
+      virtual HRESULT __stdcall raw_LoadKmlData (
+        /*[in]*/ BSTR * kmlData ) = 0;
+      virtual HRESULT __stdcall get_AutoPilotSpeed (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoPilotSpeed (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewExtents (
+        /*[out,retval]*/ struct IViewExtentsGE * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetFeatureByName (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IFeatureGE * * pFeature ) = 0;
+      virtual HRESULT __stdcall raw_GetFeatureByHref (
+        /*[in]*/ BSTR href,
+        /*[out,retval]*/ struct IFeatureGE * * pFeature ) = 0;
+      virtual HRESULT __stdcall raw_SetFeatureView (
+        /*[in]*/ struct IFeatureGE * feature,
+        /*[in]*/ double speed ) = 0;
+      virtual HRESULT __stdcall raw_GetPointOnTerrainFromScreenCoords (
+        /*[in]*/ double screen_x,
+        /*[in]*/ double screen_y,
+        /*[out,retval]*/ struct IPointOnTerrainGE * * pPoint ) = 0;
+      virtual HRESULT __stdcall get_VersionMajor (
+        /*[out,retval]*/ int * major ) = 0;
+      virtual HRESULT __stdcall get_VersionMinor (
+        /*[out,retval]*/ int * minor ) = 0;
+      virtual HRESULT __stdcall get_VersionBuild (
+        /*[out,retval]*/ int * build ) = 0;
+      virtual HRESULT __stdcall get_VersionAppType (
+        /*[out,retval]*/ AppTypeGE * appType ) = 0;
+      virtual HRESULT __stdcall raw_IsInitialized (
+        /*[out,retval]*/ long * IsInitialized ) = 0;
+      virtual HRESULT __stdcall raw_IsOnline (
+        /*[out,retval]*/ long * IsOnline ) = 0;
+      virtual HRESULT __stdcall raw_Login ( ) = 0;
+      virtual HRESULT __stdcall raw_Logout ( ) = 0;
+      virtual HRESULT __stdcall raw_ShowDescriptionBalloon (
+        /*[in]*/ struct IFeatureGE * feature ) = 0;
+      virtual HRESULT __stdcall raw_HideDescriptionBalloons ( ) = 0;
+      virtual HRESULT __stdcall raw_GetHighlightedFeature (
+        /*[out,retval]*/ struct IFeatureGE * * pFeature ) = 0;
+      virtual HRESULT __stdcall raw_GetMyPlaces (
+        /*[out,retval]*/ struct IFeatureGE * * pMyPlaces ) = 0;
+      virtual HRESULT __stdcall raw_GetTemporaryPlaces (
+        /*[out,retval]*/ struct IFeatureGE * * pTemporaryPlaces ) = 0;
+      virtual HRESULT __stdcall raw_GetLayersDatabases (
+        /*[out,retval]*/ struct IFeatureCollectionGE * * pDatabases ) = 0;
+      virtual HRESULT __stdcall get_ElevationExaggeration (
+        /*[out,retval]*/ double * pExaggeration ) = 0;
+      virtual HRESULT __stdcall put_ElevationExaggeration (
+        /*[in]*/ double pExaggeration ) = 0;
+      virtual HRESULT __stdcall raw_GetMainHwnd (
+        /*[out,retval]*/ OLE_HANDLE * hwnd ) = 0;
+      virtual HRESULT __stdcall get_TourController (
+        /*[out,retval]*/ struct ITourControllerGE * * pTourController ) = 0;
+      virtual HRESULT __stdcall get_SearchController (
+        /*[out,retval]*/ struct ISearchControllerGE * * pSearchController ) = 0;
+      virtual HRESULT __stdcall get_AnimationController (
+        /*[out,retval]*/ struct IAnimationControllerGE * * pAnimationController ) = 0;
+      virtual HRESULT __stdcall raw_GetRenderHwnd (
+        /*[out,retval]*/ OLE_HANDLE * hwnd ) = 0;
+};
+
+struct __declspec(uuid("92547b06-0007-4820-b76a-c84e402ca709"))
+IFeatureGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetVisibility,put=PutVisibility))
+    long Visibility;
+    __declspec(property(get=GetHasView))
+    long HasView;
+    __declspec(property(get=GetHighlighted))
+    long Highlighted;
+    __declspec(property(get=GetTimeInterval))
+    ITimeIntervalGEPtr TimeInterval;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    long GetVisibility ( );
+    void PutVisibility (
+        long pVal );
+    long GetHasView ( );
+    long GetHighlighted ( );
+    HRESULT Highlight ( );
+    IFeatureGEPtr GetParent ( );
+    IFeatureCollectionGEPtr GetChildren ( );
+    ITimeIntervalGEPtr GetTimeInterval ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_Visibility (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Visibility (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_HasView (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Highlighted (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Highlight ( ) = 0;
+      virtual HRESULT __stdcall raw_GetParent (
+        /*[out,retval]*/ struct IFeatureGE * * pParent ) = 0;
+      virtual HRESULT __stdcall raw_GetChildren (
+        /*[out,retval]*/ struct IFeatureCollectionGE * * pChildren ) = 0;
+      virtual HRESULT __stdcall get_TimeInterval (
+        /*[out,retval]*/ struct ITimeIntervalGE * * pInterval ) = 0;
+};
+
+struct __declspec(uuid("851d25e7-785f-4db7-95f9-a0ef7e836c44"))
+IFeatureCollectionGE : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IFeatureGEPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    IFeatureGEPtr GetItem (
+        long index );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppUnk ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IFeatureGE * * pFeature ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Count ) = 0;
+};
+
+struct __declspec(uuid("524e5b0f-d593-45a6-9f87-1bae7d338373"))
+ISearchControllerGE : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Search (
+        _bstr_t searchString );
+    long IsSearchInProgress ( );
+    IFeatureCollectionGEPtr GetResults ( );
+    HRESULT ClearResults ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Search (
+        /*[in]*/ BSTR searchString ) = 0;
+      virtual HRESULT __stdcall raw_IsSearchInProgress (
+        /*[out,retval]*/ long * inProgress ) = 0;
+      virtual HRESULT __stdcall raw_GetResults (
+        /*[out,retval]*/ struct IFeatureCollectionGE * * pResults ) = 0;
+      virtual HRESULT __stdcall raw_ClearResults ( ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\users\박주홍\desktop\googleearth\googleearth\debug\googleearth.tli"
+
+#pragma pack(pop)

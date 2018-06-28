@@ -1,0 +1,55 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+#*.lib
+
+# Executables
+#*.exe
+*.out
+*.app
+
+#MFC DB file
+*.VC.db
+*.opendb
+.suo
+*.iobj
+*.ipdb
+*.pdb
+*.log
+*.pch
+*.res
+*.tlog
+
+#lib folder
+lib/boost_1_62_0/
+.vs/
+lib/sqlite3
+
+#temp
+~$*.*
+
+#db
+*.db

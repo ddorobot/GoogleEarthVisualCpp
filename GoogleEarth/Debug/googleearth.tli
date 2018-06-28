@@ -1,0 +1,970 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.14.26431.0 (0f5f5c1c).
+//
+// c:\users\박주홍\desktop\googleearth\googleearth\debug\googleearth.tli
+//
+// Wrapper implementations for Win32 type library C:\\Program Files (x86)\\Google\\Google Earth Pro\\client\\googleearth.exe
+// compiler-generated file created 06/28/18 at 19:57:22 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ICameraInfoGE wrapper method implementations
+//
+
+inline double ICameraInfoGE::GetFocusPointLatitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_FocusPointLatitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraInfoGE::PutFocusPointLatitude ( double pLat ) {
+    HRESULT _hr = put_FocusPointLatitude(pLat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ICameraInfoGE::GetFocusPointLongitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_FocusPointLongitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraInfoGE::PutFocusPointLongitude ( double pLon ) {
+    HRESULT _hr = put_FocusPointLongitude(pLon);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ICameraInfoGE::GetFocusPointAltitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_FocusPointAltitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraInfoGE::PutFocusPointAltitude ( double pAlt ) {
+    HRESULT _hr = put_FocusPointAltitude(pAlt);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline AltitudeModeGE ICameraInfoGE::GetFocusPointAltitudeMode ( ) {
+    AltitudeModeGE _result;
+    HRESULT _hr = get_FocusPointAltitudeMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraInfoGE::PutFocusPointAltitudeMode ( AltitudeModeGE pAltMode ) {
+    HRESULT _hr = put_FocusPointAltitudeMode(pAltMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ICameraInfoGE::GetRange ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Range(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraInfoGE::PutRange ( double pRange ) {
+    HRESULT _hr = put_Range(pRange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ICameraInfoGE::GetTilt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Tilt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraInfoGE::PutTilt ( double pTilt ) {
+    HRESULT _hr = put_Tilt(pTilt);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ICameraInfoGE::GetAzimuth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Azimuth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraInfoGE::PutAzimuth ( double pAzimuth ) {
+    HRESULT _hr = put_Azimuth(pAzimuth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IViewExtentsGE wrapper method implementations
+//
+
+inline double IViewExtentsGE::GetNorth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_North(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IViewExtentsGE::GetSouth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_South(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IViewExtentsGE::GetEast ( ) {
+    double _result = 0;
+    HRESULT _hr = get_East(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IViewExtentsGE::GetWest ( ) {
+    double _result = 0;
+    HRESULT _hr = get_West(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ITimeGE wrapper method implementations
+//
+
+inline TimeTypeGE ITimeGE::GetType ( ) {
+    TimeTypeGE _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutType ( TimeTypeGE pType ) {
+    HRESULT _hr = put_Type(pType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ITimeGE::GetYear ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Year(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutYear ( int pYear ) {
+    HRESULT _hr = put_Year(pYear);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ITimeGE::GetMonth ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Month(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutMonth ( int pMonth ) {
+    HRESULT _hr = put_Month(pMonth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ITimeGE::GetDay ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Day(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutDay ( int pDay ) {
+    HRESULT _hr = put_Day(pDay);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ITimeGE::GetHour ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Hour(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutHour ( int pHour ) {
+    HRESULT _hr = put_Hour(pHour);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ITimeGE::GetMinute ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Minute(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutMinute ( int pMinute ) {
+    HRESULT _hr = put_Minute(pMinute);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ITimeGE::GetSecond ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Second(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutSecond ( int pSecond ) {
+    HRESULT _hr = put_Second(pSecond);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ITimeGE::GetTimeZone ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TimeZone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITimeGE::PutTimeZone ( double pTimeZone ) {
+    HRESULT _hr = put_TimeZone(pTimeZone);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ITimeGEPtr ITimeGE::Clone ( ) {
+    struct ITimeGE * _result = 0;
+    HRESULT _hr = raw_Clone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeGEPtr(_result, false);
+}
+
+inline ITimeGEPtr ITimeGE::ConvertToZone ( double TimeZone ) {
+    struct ITimeGE * _result = 0;
+    HRESULT _hr = raw_ConvertToZone(TimeZone, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeGEPtr(_result, false);
+}
+
+//
+// interface ITimeIntervalGE wrapper method implementations
+//
+
+inline ITimeGEPtr ITimeIntervalGE::GetBeginTime ( ) {
+    struct ITimeGE * _result = 0;
+    HRESULT _hr = get_BeginTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeGEPtr(_result, false);
+}
+
+inline ITimeGEPtr ITimeIntervalGE::GetEndTime ( ) {
+    struct ITimeGE * _result = 0;
+    HRESULT _hr = get_EndTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeGEPtr(_result, false);
+}
+
+//
+// interface IPointOnTerrainGE wrapper method implementations
+//
+
+inline double IPointOnTerrainGE::GetLatitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Latitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IPointOnTerrainGE::GetLongitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Longitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IPointOnTerrainGE::GetAltitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Altitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IPointOnTerrainGE::GetProjectedOntoGlobe ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ProjectedOntoGlobe(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IPointOnTerrainGE::GetZeroElevationExaggeration ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ZeroElevationExaggeration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ITourControllerGE wrapper method implementations
+//
+
+inline HRESULT ITourControllerGE::PlayOrPause ( ) {
+    HRESULT _hr = raw_PlayOrPause();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITourControllerGE::Stop ( ) {
+    HRESULT _hr = raw_Stop();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double ITourControllerGE::Getspeed ( ) {
+    double _result = 0;
+    HRESULT _hr = get_speed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITourControllerGE::Putspeed ( double pSpeed ) {
+    HRESULT _hr = put_speed(pSpeed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ITourControllerGE::GetPauseDelay ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PauseDelay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITourControllerGE::PutPauseDelay ( double pPauseDelay ) {
+    HRESULT _hr = put_PauseDelay(pPauseDelay);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ITourControllerGE::GetCycles ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Cycles(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITourControllerGE::PutCycles ( int pCycles ) {
+    HRESULT _hr = put_Cycles(pCycles);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IAnimationControllerGE wrapper method implementations
+//
+
+inline HRESULT IAnimationControllerGE::Play ( ) {
+    HRESULT _hr = raw_Play();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAnimationControllerGE::Pause ( ) {
+    HRESULT _hr = raw_Pause();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ITimeIntervalGEPtr IAnimationControllerGE::GetSliderTimeInterval ( ) {
+    struct ITimeIntervalGE * _result = 0;
+    HRESULT _hr = get_SliderTimeInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeIntervalGEPtr(_result, false);
+}
+
+inline ITimeIntervalGEPtr IAnimationControllerGE::GetCurrentTimeInterval ( ) {
+    struct ITimeIntervalGE * _result = 0;
+    HRESULT _hr = get_CurrentTimeInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeIntervalGEPtr(_result, false);
+}
+
+inline void IAnimationControllerGE::PutCurrentTimeInterval ( struct ITimeIntervalGE * pInterval ) {
+    HRESULT _hr = put_CurrentTimeInterval(pInterval);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IKHViewInfo wrapper method implementations
+//
+
+inline double IKHViewInfo::GetLatitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Latitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IKHViewInfo::PutLatitude ( double pLat ) {
+    HRESULT _hr = put_Latitude(pLat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IKHViewInfo::GetLongitude ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Longitude(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IKHViewInfo::PutLongitude ( double pLon ) {
+    HRESULT _hr = put_Longitude(pLon);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IKHViewInfo::GetRange ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Range(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IKHViewInfo::PutRange ( double pRange ) {
+    HRESULT _hr = put_Range(pRange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IKHViewInfo::GetTilt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Tilt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IKHViewInfo::PutTilt ( double pTilt ) {
+    HRESULT _hr = put_Tilt(pTilt);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IKHViewInfo::GetAzimuth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Azimuth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IKHViewInfo::PutAzimuth ( double pAzimuth ) {
+    HRESULT _hr = put_Azimuth(pAzimuth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IKHViewExtents wrapper method implementations
+//
+
+inline double IKHViewExtents::GetNorth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_North(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IKHViewExtents::GetSouth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_South(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IKHViewExtents::GetEast ( ) {
+    double _result = 0;
+    HRESULT _hr = get_East(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IKHViewExtents::GetWest ( ) {
+    double _result = 0;
+    HRESULT _hr = get_West(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IKHFeature wrapper method implementations
+//
+
+inline long IKHFeature::GetVisibility ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Visibility(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IKHFeature::PutVisibility ( long pVal ) {
+    HRESULT _hr = put_Visibility(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IKHFeature::GetHasView ( ) {
+    long _result = 0;
+    HRESULT _hr = get_HasView(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IKHInterface wrapper method implementations
+//
+
+inline IKHViewInfoPtr IKHInterface::currentView ( long terrain ) {
+    struct IKHViewInfo * _result = 0;
+    HRESULT _hr = raw_currentView(terrain, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IKHViewInfoPtr(_result, false);
+}
+
+inline long IKHInterface::GetStreamingProgressPercentage ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StreamingProgressPercentage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IKHInterface::SaveScreenShot ( _bstr_t fileName, long quality ) {
+    HRESULT _hr = raw_SaveScreenShot(fileName, quality);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IKHInterface::OpenFile ( _bstr_t fileName ) {
+    HRESULT _hr = raw_OpenFile(fileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IKHInterface::QuitApplication ( ) {
+    HRESULT _hr = raw_QuitApplication();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IKHInterface::SetRenderWindowSize ( long width, long height ) {
+    HRESULT _hr = raw_SetRenderWindowSize(width, height);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double IKHInterface::GetAutoPilotSpeed ( ) {
+    double _result = 0;
+    HRESULT _hr = get_AutoPilotSpeed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IKHInterface::PutAutoPilotSpeed ( double pVal ) {
+    HRESULT _hr = put_AutoPilotSpeed(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IKHViewExtentsPtr IKHInterface::GetcurrentViewExtents ( ) {
+    struct IKHViewExtents * _result = 0;
+    HRESULT _hr = get_currentViewExtents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IKHViewExtentsPtr(_result, false);
+}
+
+inline HRESULT IKHInterface::setView ( struct IKHViewInfo * view, long terrain, double speed ) {
+    HRESULT _hr = raw_setView(view, terrain, speed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IKHInterface::LoadKml ( BSTR * kmlData ) {
+    HRESULT _hr = raw_LoadKml(kmlData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IKHFeaturePtr IKHInterface::GetFeatureByName ( _bstr_t Name ) {
+    struct IKHFeature * _result = 0;
+    HRESULT _hr = raw_GetFeatureByName(Name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IKHFeaturePtr(_result, false);
+}
+
+inline HRESULT IKHInterface::setViewParams ( double lat, double lon, double Range, double Tilt, double Azimuth, long terrain, double speed ) {
+    HRESULT _hr = raw_setViewParams(lat, lon, Range, Tilt, Azimuth, terrain, speed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IKHInterface::SetFeatureView ( struct IKHFeature * feature, double speed ) {
+    HRESULT _hr = raw_SetFeatureView(feature, speed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline SAFEARRAY * IKHInterface::GetPointOnTerrainFromScreenCoords ( double screen_x, double screen_y ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetPointOnTerrainFromScreenCoords(screen_x, screen_y, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IKHInterface::getCurrentVersion ( int * major, int * minor, int * build, appType * appType ) {
+    HRESULT _hr = raw_getCurrentVersion(major, minor, build, appType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IKHInterface::isClientInitialized ( int * IsInitialized ) {
+    HRESULT _hr = raw_isClientInitialized(IsInitialized);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IApplicationGE wrapper method implementations
+//
+
+inline ICameraInfoGEPtr IApplicationGE::GetCamera ( long considerTerrain ) {
+    struct ICameraInfoGE * _result = 0;
+    HRESULT _hr = raw_GetCamera(considerTerrain, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICameraInfoGEPtr(_result, false);
+}
+
+inline HRESULT IApplicationGE::SetCamera ( struct ICameraInfoGE * camera, double speed ) {
+    HRESULT _hr = raw_SetCamera(camera, speed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplicationGE::SetCameraParams ( double lat, double lon, double alt, AltitudeModeGE altMode, double Range, double Tilt, double Azimuth, double speed ) {
+    HRESULT _hr = raw_SetCameraParams(lat, lon, alt, altMode, Range, Tilt, Azimuth, speed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IApplicationGE::GetStreamingProgressPercentage ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StreamingProgressPercentage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IApplicationGE::SaveScreenShot ( _bstr_t fileName, long quality ) {
+    HRESULT _hr = raw_SaveScreenShot(fileName, quality);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplicationGE::OpenKmlFile ( _bstr_t fileName, long suppressMessages ) {
+    HRESULT _hr = raw_OpenKmlFile(fileName, suppressMessages);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplicationGE::LoadKmlData ( BSTR * kmlData ) {
+    HRESULT _hr = raw_LoadKmlData(kmlData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double IApplicationGE::GetAutoPilotSpeed ( ) {
+    double _result = 0;
+    HRESULT _hr = get_AutoPilotSpeed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IApplicationGE::PutAutoPilotSpeed ( double pVal ) {
+    HRESULT _hr = put_AutoPilotSpeed(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IViewExtentsGEPtr IApplicationGE::GetViewExtents ( ) {
+    struct IViewExtentsGE * _result = 0;
+    HRESULT _hr = get_ViewExtents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IViewExtentsGEPtr(_result, false);
+}
+
+inline IFeatureGEPtr IApplicationGE::GetFeatureByName ( _bstr_t Name ) {
+    struct IFeatureGE * _result = 0;
+    HRESULT _hr = raw_GetFeatureByName(Name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureGEPtr(_result, false);
+}
+
+inline IFeatureGEPtr IApplicationGE::GetFeatureByHref ( _bstr_t href ) {
+    struct IFeatureGE * _result = 0;
+    HRESULT _hr = raw_GetFeatureByHref(href, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureGEPtr(_result, false);
+}
+
+inline HRESULT IApplicationGE::SetFeatureView ( struct IFeatureGE * feature, double speed ) {
+    HRESULT _hr = raw_SetFeatureView(feature, speed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IPointOnTerrainGEPtr IApplicationGE::GetPointOnTerrainFromScreenCoords ( double screen_x, double screen_y ) {
+    struct IPointOnTerrainGE * _result = 0;
+    HRESULT _hr = raw_GetPointOnTerrainFromScreenCoords(screen_x, screen_y, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPointOnTerrainGEPtr(_result, false);
+}
+
+inline int IApplicationGE::GetVersionMajor ( ) {
+    int _result = 0;
+    HRESULT _hr = get_VersionMajor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int IApplicationGE::GetVersionMinor ( ) {
+    int _result = 0;
+    HRESULT _hr = get_VersionMinor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int IApplicationGE::GetVersionBuild ( ) {
+    int _result = 0;
+    HRESULT _hr = get_VersionBuild(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline AppTypeGE IApplicationGE::GetVersionAppType ( ) {
+    AppTypeGE _result;
+    HRESULT _hr = get_VersionAppType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IApplicationGE::IsInitialized ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_IsInitialized(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IApplicationGE::IsOnline ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_IsOnline(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IApplicationGE::Login ( ) {
+    HRESULT _hr = raw_Login();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplicationGE::Logout ( ) {
+    HRESULT _hr = raw_Logout();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplicationGE::ShowDescriptionBalloon ( struct IFeatureGE * feature ) {
+    HRESULT _hr = raw_ShowDescriptionBalloon(feature);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplicationGE::HideDescriptionBalloons ( ) {
+    HRESULT _hr = raw_HideDescriptionBalloons();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IFeatureGEPtr IApplicationGE::GetHighlightedFeature ( ) {
+    struct IFeatureGE * _result = 0;
+    HRESULT _hr = raw_GetHighlightedFeature(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureGEPtr(_result, false);
+}
+
+inline IFeatureGEPtr IApplicationGE::GetMyPlaces ( ) {
+    struct IFeatureGE * _result = 0;
+    HRESULT _hr = raw_GetMyPlaces(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureGEPtr(_result, false);
+}
+
+inline IFeatureGEPtr IApplicationGE::GetTemporaryPlaces ( ) {
+    struct IFeatureGE * _result = 0;
+    HRESULT _hr = raw_GetTemporaryPlaces(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureGEPtr(_result, false);
+}
+
+inline IFeatureCollectionGEPtr IApplicationGE::GetLayersDatabases ( ) {
+    struct IFeatureCollectionGE * _result = 0;
+    HRESULT _hr = raw_GetLayersDatabases(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureCollectionGEPtr(_result, false);
+}
+
+inline double IApplicationGE::GetElevationExaggeration ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ElevationExaggeration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IApplicationGE::PutElevationExaggeration ( double pExaggeration ) {
+    HRESULT _hr = put_ElevationExaggeration(pExaggeration);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_HANDLE IApplicationGE::GetMainHwnd ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = raw_GetMainHwnd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITourControllerGEPtr IApplicationGE::GetTourController ( ) {
+    struct ITourControllerGE * _result = 0;
+    HRESULT _hr = get_TourController(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITourControllerGEPtr(_result, false);
+}
+
+inline ISearchControllerGEPtr IApplicationGE::GetSearchController ( ) {
+    struct ISearchControllerGE * _result = 0;
+    HRESULT _hr = get_SearchController(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISearchControllerGEPtr(_result, false);
+}
+
+inline IAnimationControllerGEPtr IApplicationGE::GetAnimationController ( ) {
+    struct IAnimationControllerGE * _result = 0;
+    HRESULT _hr = get_AnimationController(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAnimationControllerGEPtr(_result, false);
+}
+
+inline OLE_HANDLE IApplicationGE::GetRenderHwnd ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = raw_GetRenderHwnd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IFeatureGE wrapper method implementations
+//
+
+inline _bstr_t IFeatureGE::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IFeatureGE::GetVisibility ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Visibility(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IFeatureGE::PutVisibility ( long pVal ) {
+    HRESULT _hr = put_Visibility(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IFeatureGE::GetHasView ( ) {
+    long _result = 0;
+    HRESULT _hr = get_HasView(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IFeatureGE::GetHighlighted ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Highlighted(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IFeatureGE::Highlight ( ) {
+    HRESULT _hr = raw_Highlight();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IFeatureGEPtr IFeatureGE::GetParent ( ) {
+    struct IFeatureGE * _result = 0;
+    HRESULT _hr = raw_GetParent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureGEPtr(_result, false);
+}
+
+inline IFeatureCollectionGEPtr IFeatureGE::GetChildren ( ) {
+    struct IFeatureCollectionGE * _result = 0;
+    HRESULT _hr = raw_GetChildren(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureCollectionGEPtr(_result, false);
+}
+
+inline ITimeIntervalGEPtr IFeatureGE::GetTimeInterval ( ) {
+    struct ITimeIntervalGE * _result = 0;
+    HRESULT _hr = get_TimeInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeIntervalGEPtr(_result, false);
+}
+
+//
+// interface IFeatureCollectionGE wrapper method implementations
+//
+
+inline IUnknownPtr IFeatureCollectionGE::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IFeatureGEPtr IFeatureCollectionGE::GetItem ( long index ) {
+    struct IFeatureGE * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureGEPtr(_result, false);
+}
+
+inline long IFeatureCollectionGE::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISearchControllerGE wrapper method implementations
+//
+
+inline HRESULT ISearchControllerGE::Search ( _bstr_t searchString ) {
+    HRESULT _hr = raw_Search(searchString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISearchControllerGE::IsSearchInProgress ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_IsSearchInProgress(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IFeatureCollectionGEPtr ISearchControllerGE::GetResults ( ) {
+    struct IFeatureCollectionGE * _result = 0;
+    HRESULT _hr = raw_GetResults(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeatureCollectionGEPtr(_result, false);
+}
+
+inline HRESULT ISearchControllerGE::ClearResults ( ) {
+    HRESULT _hr = raw_ClearResults();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
