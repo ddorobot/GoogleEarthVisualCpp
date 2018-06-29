@@ -1,9 +1,9 @@
-﻿// Created by Microsoft (R) C/C++ Compiler Version 14.14.26431.0 (f8f5db56).
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.14.26431.0 (4d718e41).
 //
-// c:\users\박주홍\desktop\googlemapvisualcpp\googlemapvisualcpp\googleearth\debug\googleearth.tlh
+// c:\users\박주홍\desktop\googlemapvisualcpp\googlemapvisualcpp\googleearth\x64\debug\googleearth.tlh
 //
 // C++ source equivalent of Win32 type library C:\\Program Files (x86)\\Google\\Google Earth Pro\\client\\googleearth.exe
-// compiler-generated file created 06/29/18 at 13:04:41 - DO NOT EDIT!
+// compiler-generated file created 06/29/18 at 13:04:29 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -1129,6 +1129,6 @@ ISearchControllerGE : IDispatch
 // Wrapper method implementations
 //
 
-#include "c:\users\박주홍\desktop\googlemapvisualcpp\googlemapvisualcpp\googleearth\debug\googleearth.tli"
+#include "c:\users\박주홍\desktop\googlemapvisualcpp\googlemapvisualcpp\googleearth\x64\debug\googleearth.tli"
 
 #pragma pack(pop)
